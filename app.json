@@ -1,9 +1,7 @@
 {
   "expo": {
-    "name": "Blank Template",
-    "slug": "QualiMe",
-    "privacy": "public",
-    "sdkVersion": "36.0.0",
+    "name": "QualiMeApp",
+    "slug": "QualiMeApp",
     "platforms": [
       "ios",
       "android",
