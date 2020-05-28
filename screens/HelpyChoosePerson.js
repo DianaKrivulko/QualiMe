@@ -3,17 +3,21 @@ import {StyleSheet, Text, View} from 'react-native';
 import {NavigationPanel} from "../components/NavigationPanel";
 import {SchoolSection} from "../components/SchoolSection";
 import {StudentSection} from "../components/StudentSection";
+import {LoginButton} from "../components/LoginButton";
 
-export default function App(props) {
+export default function HeplyChoosePerson(props) {
     return (
         <View style={styles.container}>
-
+{/*
             <NavigationPanel>
-            </NavigationPanel>
+            </NavigationPanel>*/}
             <Text style={styles.text}>
                 Кто вы?
             </Text>
-            <SchoolSection/>
+            <SchoolSection
+                onPress={() => {
+                    props.navigation.navigate("TopicHelpy")
+                }}/>
             <StudentSection/>
 
         </View>

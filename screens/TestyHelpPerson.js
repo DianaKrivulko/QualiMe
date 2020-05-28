@@ -4,17 +4,20 @@ import {NavigationPanel} from "../components/NavigationPanel";
 import {SchoolSection} from "../components/SchoolSection";
 import {StudentSection} from "../components/StudentSection";
 
-export default function App(props) {
+export default function TestyHelpPerson(props) {
     return (
         <View style={styles.container}>
 
-            <NavigationPanel>
-            </NavigationPanel>
+           {/* <NavigationPanel>
+            </NavigationPanel>*/}
             <Text style={styles.text}>
                 Кто вы?
             </Text>
             <SchoolSection/>
-            <StudentSection/>
+            <StudentSection
+                onPress={() => {
+                    props.navigation.navigate("TopicTestyStudent")
+                }}/>
             <StudentSection/>
         </View>
 
@@ -30,11 +33,11 @@ const styles = StyleSheet.create({
         backgroundColor: 'black'
     },
     text: {
-        marginTop: 100,
+        marginTop: 80,
         alignItems: 'center',
         justifyContent: 'center',
         //  fontFamily: 'Oswald',
-        fontSize: 28,
+        fontSize: 32,
         color: 'white',
     },
 
