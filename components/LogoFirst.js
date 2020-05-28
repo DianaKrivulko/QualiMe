@@ -1,10 +1,11 @@
 import React from 'react';
 import {StyleSheet, Image,Text,View} from 'react-native';
+import {logo} from '../assets/img'
 //{{uri: 'https://quali.me/assets/img/q.png'}}
 export const LogoFirst = () => {
     return (
         <View  style={styles.container}>
-            <Image style={styles.img} source={{uri: 'https://reactnative.dev/img/tiny_logo.png',}}>
+            <Image style={styles.img} source={logo}>
 
             </Image>
             <Text style={styles.text}>
@@ -16,7 +17,7 @@ export const LogoFirst = () => {
 const styles = StyleSheet.create({
 
     container: {
-        paddingTop:90,
+        paddingTop:60,
         alignItems:'center',
         flexDirection:'row',
         marginTop:5,

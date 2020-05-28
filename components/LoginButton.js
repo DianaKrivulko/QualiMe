@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         color: 'black',
     },
     touch: {
-        marginTop:190,
+        marginTop:150,
         height: 80,
     },
 

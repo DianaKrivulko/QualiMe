@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     },
     touch: {
         alignItems: 'center',
-        marginTop:40,
+        marginTop:50,
         height: 130,
     },
 

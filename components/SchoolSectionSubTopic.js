@@ -3,15 +3,14 @@ import {StyleSheet, Image, Text, View, TouchableHighlight} from 'react-native';
 import {school} from "../assets/img";
 
 
-export const SchoolSection = (props) => {
+export const SchoolSectionSubTopic = (props) => {
     return (
         <TouchableHighlight
             onPress={props.onPress} style={styles.touch}>
             <View style={styles.container}>
 
-                <Image style={styles.img} source={school}/>
                 <Text style={styles.text}>
-                    Школьник
+                    Матрицы и прочее
                 </Text>
             </View>
         </TouchableHighlight>

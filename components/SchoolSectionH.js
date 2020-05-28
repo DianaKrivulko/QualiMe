@@ -1,6 +1,5 @@
 import React from 'react';
-import {StyleSheet, Image, Text, View, TouchableHighlight} from 'react-native';
-import {school} from "../assets/img";
+import {StyleSheet, Image, Text, View, TouchableHighlight} from 'react-native'
 
 
 export const SchoolSection = (props) => {
@@ -9,7 +8,7 @@ export const SchoolSection = (props) => {
             onPress={props.onPress} style={styles.touch}>
             <View style={styles.container}>
 
-                <Image style={styles.img} source={school}/>
+                <Image style={styles.img} source={{uri: 'https://reactnative.dev/img/tiny_logo.png',}}/>
                 <Text style={styles.text}>
                     Школьник
                 </Text>

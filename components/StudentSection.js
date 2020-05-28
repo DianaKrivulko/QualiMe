@@ -1,5 +1,6 @@
 import React from 'react';
-import {StyleSheet, Image, Text, View, TouchableHighlight, CheckBox} from 'react-native'
+import {StyleSheet, Image, Text, View, TouchableHighlight, CheckBox} from 'react-native';
+import {student} from "../assets/img";
 
 
 export const StudentSection = (props) => {
@@ -8,7 +9,7 @@ export const StudentSection = (props) => {
             onPress={props.onPress} style={styles.touch}>
             <View style={styles.container}>
 
-                <Image style={styles.img} source={{uri: 'https://reactnative.dev/img/tiny_logo.png',}}/>
+                <Image style={styles.img} source={student}/>
                {/* <CheckBox
 
                     checked={this.state}
@@ -16,7 +17,7 @@ export const StudentSection = (props) => {
                 />*/}
 
                 <Text style={styles.text}>
-                    pidr
+                    Студент
                 </Text>
             </View>
         </TouchableHighlight>
